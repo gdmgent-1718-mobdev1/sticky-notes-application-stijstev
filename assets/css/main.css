@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+.button {
+    width: 3em;
+    cursor: pointer;
+}
+.button:hover {
+    animation-name: btn-hover;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+@keyframes btn-hover {
+    100% {
+        transform: scale(1.1);
+    };
+}
+
+/*Sticky note styling*/
+.stickyNote {
+    width: 12vw;
+    height: 20vh;
+    margin: 1%;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+
+    float: left;
+    font-family: "Montserrat";
+}
+.stickyNote-body {
+    padding: 5%;
+    height: 15vh;
+    width: 100%;
+}
+.stickyNote-buttonsContainer {
+    height: 5vh;
+    width: 100%;
+
+    background-color: orangered; 
+}
+.stickyNote-buttonsContainer .button {
+    display: inline-block;
+    width: 17%;
+
+    color: white;
+    fill: currentColor;
+    stroke: white;
+    background-color: none;
+}
+#toolbelt {
+    position: fixed;
+    bottom: 0;
+  
+    left: 0;
+    right: 0;
+
+    background-color: orangered;
+}
